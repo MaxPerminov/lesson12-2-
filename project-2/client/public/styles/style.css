@@ -1,0 +1,70 @@
+@import url("./variables.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  background: var(--primary-bg);
+  color:var(--primary-color);
+  height: 100vh;
+  font-family: var(--primary-font);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-m);
+}
+
+.input {
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid cyan;
+  padding: .3rem 3rem;
+  color: cyan;
+  font-size: 1.1rem;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.nav-link {
+  background: inherit;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border: none;
+  color: aliceblue;
+  margin-right: 2rem;
+}
+
+.nav-link:last-child {
+  margin:0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 2px solid cyan;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card__image {
+  width: 300px;
+  height: 200px;
+}
